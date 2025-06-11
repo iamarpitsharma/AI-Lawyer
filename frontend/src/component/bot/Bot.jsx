@@ -86,7 +86,7 @@ const FileUpload = ({ onUploadComplete }) => {
     formData.append("file", file);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/upload`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/upload`, {
         method: "POST",
         body: formData,
       });
@@ -167,7 +167,7 @@ const Bot = () => {
         parts: [{ text }],
       }));
 
-      const response = await fetch(import.meta.env.VITE_API_URL, {
+      const response = await fetch(import.meta.env.VITE_GEMINI_API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ contents: formattedHistory }),
