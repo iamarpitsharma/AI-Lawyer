@@ -4,3 +4,5 @@ python-multipart
 PyMuPDF
 python-dotenv
 requests
+python-docx
+
