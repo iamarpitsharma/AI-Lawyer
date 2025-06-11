@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ai-legal-assistant-backend"
+version = "0.1.0"
+description = "AI Legal Assistant Backend with FastAPI and Gemini API"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.0"
+python-dotenv = "^1.0.0"
+pymupdf = "^1.22.5"       # for fitz
+python-docx = "^0.8.11"
+requests = "^2.31.0"
+uvicorn = "^0.23.1"        # for running the FastAPI app
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
